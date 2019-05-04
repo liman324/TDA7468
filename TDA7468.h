@@ -14,7 +14,7 @@
 #define TDA7468_VOLUME_RIGHT   0b00000100
 #define TDA7468_TREBLE_BASS    0b00000101
 #define TDA7468_OUTPUT         0b00000110
-#define TDA7468_BASS ALC       0b00000111
+#define TDA7468_BASS_ALC       0b00000111
 
 #include <Arduino.h>
 class TDA7468
