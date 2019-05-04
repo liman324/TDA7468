@@ -17,12 +17,12 @@ void TDA7468::setInput(int input){
   } 
 
 void TDA7468::setGain(int gain){
-  switch (input) {
+  switch (gain) {
         case 0: gain = 0b00000000;break;
 	case 1: gain = 0b00000001;break;
 	case 2: gain = 0b00000010;break;
 	case 3: gain = 0b00000011;break;
-  case 4: gain = 0b00000100;break;
+        case 4: gain = 0b00000100;break;
 	case 5: gain = 0b00000101;break;
 	case 6: gain = 0b00000110;break;
 	case 7: gain = 0b00000111;break;
@@ -148,7 +148,7 @@ void TDA7468::setAlc(int mode, int detector, int circ, int attack, int tresh, in
 	case 1: rez = 0b00000001;break;
   }
         int sum_alc = mode + detector + circ + attack + tresh + rez;
-  writeWire(TDA7468_BASS ALC ,sum_alc);	
+  writeWire(TDA7468_BASS_ALC ,sum_alc);	
   } 
 
 
