@@ -1,5 +1,5 @@
 // rcl-radio.ru liman324@yandex.ru 
-// Библиотека не тестировалась
+
 
 #ifndef TDA7468_H
 #define TDA7468_H
