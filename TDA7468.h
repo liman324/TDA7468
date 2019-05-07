@@ -4,7 +4,7 @@
 #ifndef TDA7468_H
 #define TDA7468_H
 
-#define TDA7468_address 0x44 
+#define TDA7468_address 0x44
 
 //Sub addresses
 #define TDA7468_INPUT_SELECT   0b00000000
@@ -23,7 +23,7 @@ class TDA7468
     TDA7468();
 	void setInput(int input);                                // 0...3 IN1...IN4
 	void setGain(int gain);                                  // 0...7 0...14 dB // step 2dB
-	void setSurround(int sur, int gain, int mix, int buf);   // sur 1 on 0 off // gain 0...3 // mix 0...7 // buf 1 on 0 off
+	void setSurround(int sur, int gain1, int mix, int buf);   // sur 1 on 0 off // gain 0...3 // mix 0...7 // buf 1 on 0 off
 	void setVol_R(int vol_r);                                // 0...63 
 	void setVol_L(int vol_l);                                // 0...63
 	void setTreb_Bass(int treb, int bass);                   // -14...14 step 2 dB
