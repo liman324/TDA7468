@@ -60,12 +60,12 @@ void TDA7468::setSurround(int sur, int gain1, int mix, int buf){
   } 
 
 void TDA7468::setVol_R(int vol_r){
-    vol_r = 63-vol_r;
+    vol_r = 62-vol_r;
   writeWire(TDA7468_VOLUME_RIGHT,vol_r);	
   } 
 
 void TDA7468::setVol_L(int vol_l){
-    vol_l = 63-vol_l;
+    vol_l = 62-vol_l;
   writeWire(TDA7468_VOLUME_LEFT,vol_l);	
   } 
 
