@@ -15,8 +15,8 @@ void audio(){
   tda.setInput(0); 
   tda.setGain(0);
   tda.setSurround(0,0,0,0);
-  tda.setVol_R(63);
-  tda.setVol_L(63);
+  tda.setVol_R(62);
+  tda.setVol_L(62);
   tda.setTreb_Bass(0,0);
   tda.setOutput(1); // mute
   tda.setAlc(0,0,0,0,0,0);
