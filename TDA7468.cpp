@@ -145,7 +145,7 @@ void TDA7468::setAlc(int mode, int detector, int circ, int attack, int tresh, in
   }
   switch (rez) {
         case 0: rez = 0b00000000;break;
-	case 1: rez = 0b00000001;break;
+        case 1: rez = 0b10000000;break;
   }
         int sum_alc = mode + detector + circ + attack + tresh + rez;
   writeWire(TDA7468_BASS_ALC ,sum_alc);	
